@@ -182,21 +182,31 @@ body {
 }
 
 @media (max-width: 810px) {
-    width: 648px;
+    .container {
+        width: 648px;
+    }
 }
 
 @media (max-width: 680px) {
+    .container {
     width: 544px;
+   }
 }
     
 @media (max-width: 650px) {
+    .container {
     width: 520px;
+    }
 }    
     
 @media (max-width: 510px) {
+    .container {
     width: 408px;
+    }
 }    
     
 @media (max-width: 415px) {
+    .container {
     width: 332px;
+    }
 }    
