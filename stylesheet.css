@@ -180,3 +180,23 @@ body {
     border-radius: 30px;
     background-color: deepskyblue;
 }
+
+@media (max-width: 810px) {
+    max-width: 80%;
+}
+
+@media (max-width: 680px) {
+    max-width: 80%;
+}
+    
+@media (max-width: 650px) {
+    max-width: 80%;
+}    
+    
+@media (max-width: 510px) {
+    max-width: 80%;
+}    
+    
+@media (max-width: 415px) {
+    max-width: 80%;
+}    
