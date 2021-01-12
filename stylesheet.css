@@ -1,0 +1,182 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe259;
+}
+
+.answer {
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 100px;
+    box-shadow: 0 0 3px 2px;
+}
+
+#question {
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.wrong {
+    background-color: orangered;
+}
+
+.success {
+    font-size: 2rem;
+    color: orangered;
+}
+
+.miss {
+    color: mediumblue;
+}
+
+.exp {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.support {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.fifty-fifty {
+    color: white;
+    border-radius: 30px;
+    background-color: #FF3300;
+}
+
+.hint {
+    border-radius: 30px;
+    background-color: #00FF00;
+}
+
+.used {
+    background-color: darkgray;
+}
+
+.score-show {
+    display: none;/*普段隠している*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    flex-direction: column;
+}
+
+.score-show button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+.score-show button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/*score-showを表示する*/
+.score-show.show {
+    display: flex;
+}
+
+
+
+#choiceUseHint, #choiceUseFiftyFifty {
+    position: absolute;
+    width: 300px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.4s;/*アニメーション*/
+}
+
+#choiceUseHint.hide, #choiceUseFiftyFifty.hide {
+    transform: translateY(-500px);/*上方向(Y軸)に500pxずらして配置*/
+}
+
+.yesorno {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.yesorno > p {
+    font-weight: bold;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 30px;
+    background-color: deepskyblue;
+}

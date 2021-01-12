@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>オリジナルクイズ</title>
+</head>
+<body>
+<div class="container">
+    <div id="question-container" class="hide">
+        <div id="question"></div>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+        </div>
+    </div>
+    <div class="support hide" id="support">
+    <div class=" btn-grid">
+        <div class="fifty-fifty btn" id="fiftyFifty">50:50</div>
+        <div class="hint btn" id="hint">ヒント</div>
+    </div>
+        <div id="hintText"></div>
+    </div>
+    <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+    <div class="answer">
+        <h1 id="correct" class="hide success">正解</h1>
+        <div id="good" class="hide exp"></div>
+        <h1 id="incorrect" class="hide miss">不正解</h1>
+        <div id="bad" class="hide exp"></div>
+    </div>
+    <div id="choiceUseHint" class="hide">
+        <h2>本当に使用しますか？</h2>
+    <div class="yesorno">
+        <p id="use-hint" class="btn">はい</p>
+        <p id="not-use-hint" class="btn">いいえ</p>
+    </div>
+    </div>
+    <div id="choiceUseFiftyFifty" class="hide">
+        <h2>本当に使用しますか？</h2>
+    <div class="yesorno">
+        <p id="useFiftyFifty" class="btn">はい</p>
+        <p id="notUseFiftyFifty" class="btn">いいえ</p>
+    </div>
+    </div>
+</div>
+
+<div class="score-show" id="scoreShow">
+    <div id="score-text"></div>
+    <button id="restartButton">もう一度</button>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
