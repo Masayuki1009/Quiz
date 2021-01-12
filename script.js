@@ -248,7 +248,7 @@ const questions = [
     hint: 'コーラと合わせるとうまい',
     },{
     question: '8.オランダ留学時、余りにも理解が出来ずりゅうに土下座してまで助けを求めた科目は次のうちどれ？',
-    answers: ['Business Managament', 'Marketing', 'Excel', 'Finance'],
+    answers: ['Management', 'Marketing', 'Excel', 'Finance'],
     correct: 'Excel',
     good: 'さすが張本人。あの説は教えて頂き誠にありがとうございました(土下座)',
     bad: 'んなアホな。土下座動画まで取ったのに？',
