@@ -183,30 +183,40 @@ body {
 
 @media (max-width: 810px) {
     .container {
-        width: 648px;
+        width: 810px;
+        max-width: 100%;
+        margin: 10px;
     }
 }
 
 @media (max-width: 680px) {
     .container {
-    width: 544px;
+        width: 680px;
+        max-width: 100%;
+        margin: 10px;    
    }
 }
     
 @media (max-width: 650px) {
     .container {
-    width: 520px;
+        width: 650px;
+        max-width: 100%;
+        margin: 10px;
     }
 }    
     
 @media (max-width: 510px) {
     .container {
-    width: 408px;
+        width: 510px;
+        max-width: 100%;
+        margin: 10px;
     }
 }    
     
 @media (max-width: 415px) {
     .container {
-    width: 332px;
+        width: 415px;
+        max-width: 100%;
+        margin: 10px;
     }
 }    
